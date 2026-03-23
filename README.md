@@ -1,4 +1,4 @@
-# CTwDBN (based on HMDBN)
+# CTwDBN
 Continuous-Time weighted Dynamic Bayesian Network (CTwDBN) — an approach for estimating time-evolving, weighted directed graphs — implemented on top of the original HMDBN codebase for computational speed.
 
 ## What is this?
@@ -7,7 +7,7 @@ CTwDBN extends non-stationary DBNs to output a continuously evolving, weighted D
 - Optional zero-phase Gaussian smoothing (FFT-based)
 - End-to-end tutorial scripts for two synthetic settings
 
-### CTwDBN pipeline (high level)
+### CTwDBN pipeline
 1) Fit HMDBN models
 	- HMDBN (Zhu & Wang) nests a DBN inside each hidden state of an HMM so the directed structure can change over time.
 	- Structure learning uses a node-wise structural EM routine with BWBIC for model selection.
@@ -20,6 +20,9 @@ CTwDBN extends non-stationary DBNs to output a continuously evolving, weighted D
 4) Analyze
 	- Vectorize edges over time and run PCA for visualization/trajectories.
 	- K-means clustering with bootstrap to identify discrete states (inertia + silhouette).
+
+## Data
+Pre-generated data is available upon request. Please reach out to alec.g.sheffield@gmail.com.
 
 ## Dependencies
 - MATLAB (tested with Parallel Computing Toolbox for parfor)
