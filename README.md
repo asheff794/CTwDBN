@@ -52,3 +52,4 @@ Data generators and helpers:
 
 - Built atop HMDBN
 	- Shijia Zhu & Yadong Wang, Hidden Markov induced Dynamic Bayesian Network for recovering time evolving gene regulatory networks, Scientific Reports 5:17841 (2015). [(link)](https://www.nature.com/articles/srep17841.pdf)
+	https://github.com/zhushijia/HMDBN
